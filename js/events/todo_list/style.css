@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+.main{
+    width: 40%;
+    min-height: 10vh;
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h3{
+    margin-bottom: 20px;
+}
+.main .user-input{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.user-input input{
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+outline: none;  
+
+}
+
+.user-input button{
+    width: 20%;
+    height: 100%;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.to-dos{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+}
+
+.task{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: aliceblue;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.task button{
+    border: none;
+    background-color: red;
+    padding: 10px;
+    color: white;
+}
+
