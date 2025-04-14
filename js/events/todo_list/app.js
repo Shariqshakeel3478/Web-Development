@@ -1,6 +1,8 @@
 let userInput = document.getElementById('input');
 let addButton = document.getElementById('add');
 let tasks = document.getElementById('tasks');
+let deleteTask = document.getElementById('delete');
+let taskDone = document.getElementById('done')
 
 addButton.addEventListener('click', function () {
 
@@ -17,10 +19,10 @@ addButton.addEventListener('click', function () {
         let newDiv = document.createElement('div');
         newDiv.classList.add('task');
         newDiv.innerHTML = `
-    <p>${userText}</p>
+    <p id="para">${userText}</p>
                 <div class="buttons">
-                    <button>Done</button>
-                    <button>Delete</button>
+                    <button id="done" onclick="done()" >Done</button>
+                    <button id="delete" onclick = "deleteFun(this)">Delete</button>
                 </div>
     
     `
@@ -29,4 +31,15 @@ addButton.addEventListener('click', function () {
         userText == ' ';
 
     }
-})
+
+
+
+});
+
+function deleteFun(e) {
+    console.log(e.parentNode.parentNode.remove())
+}
+
+function done(a) {
+    document.getElementById('para').classList.add('through')
+}

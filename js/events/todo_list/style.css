@@ -1,79 +1,115 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-body{
+body {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: bisque;
-}
-.main{
-    width: 40%;
-    min-height: 10vh;
-    background-color: lightblue;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.main h3{
+.main {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.main h3 {
+    font-size: 1.8rem;
+    color: #333;
     margin-bottom: 20px;
 }
-.main .user-input{
-    display: flex;
-    width: 100%;
-    height: 40px;
+
+.user-input {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    background-color: #ffffffcc;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
-.user-input input{
-    width: 75%;
-    height: 100%;
-    padding: 10px;
-outline: none;  
-
-}
-
-.user-input button{
-    width: 20%;
-    height: 100%;
+.user-input input {
+    flex: 1;
+    padding: 10px 15px;
     border: none;
-    background-color: red;
-    color: white;
+    border-radius: 25px;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
 }
 
-.to-dos{
+.user-input button {
+    padding: 10px 20px;
+    background: #4070f4;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.user-input button:hover {
+    background-color: #2b54c2;
+    cursor: pointer;
+}
+
+.to-dos {
     display: flex;
     flex-direction: column;
-width: 100%;
+    gap: 10px;
 }
 
-.task{
-    width: 100%;
-    height: 50px;
+.task {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: aliceblue;
     align-items: center;
-    margin-top: 10px;
+    background: #ffffffcc;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
 }
 
-.task button{
+.task:hover {
+    transform: scale(1.02);
+}
+
+.task p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.task button {
+    padding: 5px 15px;
+    background-color: #ff4d4d;
+    color: #fff;
     border: none;
-    background-color: red;
-    padding: 10px;
-    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
 }
 
+.task button:hover {
+    background-color: #e60000;
+    cursor: pointer;
+}
+
+.through {
+    text-decoration: line-through;
+    opacity: 0.6;
+    transition: 0.3s;
+}
